@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 700px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+       #grad1 {
+         position: absolute;
+         top:auto;
+         height: 750px;
+         width:1425px;
+         background-image: linear-gradient(to bottom right, white , yellow);
+
+       }
+    </style>
+  </head>
+  <body>
+    <div id="grad1">
+  <center>  <h3>This websites uses the Google Maps Api to display the location of Brooklyn College</h3>
+<center> <p> In order to properly use a Google Maps API, you need to add Billing information. Since
+  I have not provided them with that, the map is show with a gray filter over it and says
+  "For development purposes only." Also when the page first loads, it says the page can not be
+loaded properly for the same reason.</p>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 40.630725, lng: -73.952054};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRkppKUjeBCPLk5Wfx2lDPffiqNDsJIEY&callback=initMap">
+    </script>
+  </body>
+</html>
