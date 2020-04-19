@@ -1,0 +1,58 @@
+** I tried to deploy through Heroku but my push kept failing. It says that "No default language could be detected for 
+this app." Not sure how to change that. The following is a screenshot of my attempt to deploy my app in terminal**
+
+
+
+Last login: Sun Apr 19 14:52:08 on ttys000
+ashleykashly@Administrators-MacBook-Pro ~ % cd desktop
+ashleykashly@Administrators-MacBook-Pro desktop % heroku login
+heroku: Press any key to open up the browser to login or q to exit: 
+Opening browser to https://cli-auth.heroku.com/auth/cli/browser/b1a5fbe8-2e35-4ea6-b738-6e8a568ffc8a
+Logging in... done
+Logged in as erenburg.ashley@gmail.com
+ashleykashly@Administrators-MacBook-Pro desktop % cd 3140
+ashleykashly@Administrators-MacBook-Pro 3140 % git init
+Initialized empty Git repository in /Users/ashleykashly/Desktop/3140/.git/
+ashleykashly@Administrators-MacBook-Pro 3140 % heroku git:remote -a assignments3140
+set git remote heroku to https://git.heroku.com/assignments3140.git
+ashleykashly@Administrators-MacBook-Pro 3140 % git add .
+ashleykashly@Administrators-MacBook-Pro 3140 % git commit -am "assignment10"
+[master (root-commit) ab896ba] assignment10
+ Committer: AshleyKashly <ashleykashly@Administrators-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 46 insertions(+)
+ create mode 100644 HW 9.html
+ashleykashly@Administrators-MacBook-Pro 3140 % git push heroku master 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.05 KiB | 1.05 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote:  !     No default language could be detected for this app.
+remote: 			HINT: This occurs when Heroku cannot detect the buildpack to use for this application automatically.
+remote: 			See https://devcenter.heroku.com/articles/buildpacks
+remote: 
+remote:  !     Push failed
+remote: Verifying deploy...
+remote: 
+remote: !	Push rejected to assignments3140.
+remote: 
+To https://git.heroku.com/assignments3140.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'https://git.heroku.com/assignments3140.git'
+ashleykashly@Administrators-MacBook-Pro 3140 % 
