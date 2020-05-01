@@ -12,6 +12,8 @@ For assignemt 11,  created the pong game shown in https://cisc3140-s20.github.io
 
 # README for Final Part 2 
 
+#**All files for the final will be located in the Final Part 2 folder**
+
 ## Objective
 
 The objective is to create an input mask that formats telephone numbers in real-time.
