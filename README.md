@@ -10,9 +10,9 @@ For assignemt 11,  created the pong game shown in https://cisc3140-s20.github.io
 
 
 
-# README for Final Part 2 
+# README for Midterm 2 Part 2 
 
-#**All files for the final will be located in the Final Part 2 folder**
+#**All files for the Midterm 2 Part 2  will be located in the Midterm 2 Part 2  folder**
 
 ## Objective
 
