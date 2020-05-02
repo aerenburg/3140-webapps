@@ -6,7 +6,7 @@ function myKeyPress(e){
 
 
   // TODO: set the value of the textbox with the formatted value
-
+  // commit #2 changes the value in var =y from the number to mytextbox
   var keyPressed;
   if(window.event) { // IE
     keyPressed = e.keyCode;
@@ -15,7 +15,7 @@ function myKeyPress(e){
   }
 
   var x = String.fromCharCode(keyPressed);
-  var y = formatPhoneNumber("7189515000");
+  var y = formattextinputNumber(mytextbox);
 
 
   console.log("Key Pressed = " + x);
