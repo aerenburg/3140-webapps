@@ -24,7 +24,13 @@ function myKeyPress(e){
 
 
   // TODO: Add a condition to ignore entries beyond 10 digits
-
+  //commit #3
+  if (y.length>11){
+    document.getElementById('textinput').value = y.slice(0, 12)
+    event.preventDefault(); //not accepting any more characters
+  }else{
+    document.getElementById('textinput').value = y
+  }
 }
 
 function formatPhoneNumber(value){
