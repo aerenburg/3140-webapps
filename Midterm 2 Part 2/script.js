@@ -1,7 +1,8 @@
 function myKeyPress(e){
 
   /* TODO: retrieve the value from the text input */
-  var mytextbox = "my textbox element";
+  //commit #1
+  var mytextbox = document.getElementById('textinput').value
 
 
   // TODO: set the value of the textbox with the formatted value
